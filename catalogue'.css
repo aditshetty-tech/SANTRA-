@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAF6F0;
+    color: #121212;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.site-header {
+    background: #FFF;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 22px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.brand-title { font-family: 'Cinzel', serif; font-size: 26px; letter-spacing: 0.25em; text-transform: uppercase; }
+.brand-subtitle { font-size: 8px; text-transform: uppercase; letter-spacing: 0.4em; color: #C26E4B; margin-top: 4px; display: block; }
+.nav-links { display: flex; list-style: none; gap: 40px; }
+.nav-links a { font-size: 11px; text-transform: uppercase; letter-spacing: 0.25em; color: #666; text-decoration: none; transition: 0.3s; }
+.nav-links a:hover, .nav-links a.active { color: #C26E4B; font-weight: 600; }
+
+/* CATALOGUE TABLE CONTAINER */
+.catalogue-container { padding: 80px 60px; max-width: 1300px; margin: 0 auto; }
+.catalogue-header { text-align: center; margin-bottom: 50px; }
+.catalogue-title { font-family: 'Cinzel', serif; font-size: 36px; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 12px; }
+.catalogue-desc { font-family: 'Cormorant Garamond', serif; font-style: italic; color: #666; font-size: 20px; }
+
+/* TABLE DESIGN */
+.table-wrapper { width: 100%; overflow-x: auto; background: #FFFFFF; border: 1px solid rgba(0,0,0,0.06); box-shadow: 0 15px 35px rgba(0,0,0,0.02); }
+.catalogue-table { width: 100%; border-collapse: collapse; text-align: left; min-width: 750px; }
+.catalogue-table th { background: #121212; color: #FFF; font-size: 10px; text-transform: uppercase; letter-spacing: 0.25em; padding: 22px; font-weight: 500; }
+.catalogue-table td { padding: 22px; border-bottom: 1px solid #F0ECE6; vertical-align: middle; font-size: 13px; }
+.catalogue-table tr:hover { background-color: #FDFBF8; }
+
+.book-info { display: flex; align-items: center; gap: 20px; }
+.book-cover { width: 60px; height: 85px; object-fit: cover; border: 1px solid #E5E5E5; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+.book-details .title { font-family: 'Cinzel', serif; font-size: 14px; font-weight: 500; color: #121212; display: block; margin-bottom: 4px; }
+.book-details .author { font-family: 'Cormorant Garamond', serif; font-style: italic; color: #777; font-size: 15px; }
+
+.badge { display: inline-block; padding: 5px 12px; font-size: 9px; text-transform: uppercase; letter-spacing: 0.2em; background: #F4EFEA; color: #C26E4B; border-radius: 100px; border: 1px solid rgba(197, 160, 89, 0.3); }
+.isbn-code { font-family: monospace; color: #666; font-size: 12px; }
+.price { font-weight: 600; color: #121212; font-size: 15px; }
+
+.btn-table { padding: 10px 22px; border: 1px solid #121212; background: transparent; color: #121212; font-size: 9px; text-transform: uppercase; letter-spacing: 0.2em; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
+.btn-table:hover { background: #C26E4B; border-color: #C26E4B; color: #FFF; }
+
+/* FOOTER */
+.site-footer { background: #FFF; border-top: 1px solid rgba(0,0,0,0.08); padding: 50px 40px; text-align: center; margin-top: 80px; }
+.footer-nav { display: flex; justify-content: center; gap: 30px; list-style: none; margin-bottom: 25px; }
+.footer-nav a { font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; color: #777; text-decoration: none; }
+.copyright { font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; color: #AAA; }

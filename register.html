@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SANTRA | Privilege Registration</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="brand-logo">
+            <span class="brand-title">Santra</span>
+            <span class="brand-subtitle">Nature Inspired Fashion</span>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalogue.html">Catalogue</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html" class="active">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="auth-wrapper">
+        <div class="auth-card">
+            <h2 class="auth-title">Create Account</h2>
+            <p class="auth-subtitle">Join the Private Santra Privilege Club</p>
+
+            <form action="#" method="POST">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label class="form-label" for="fname">First Name</label>
+                        <input type="text" id="fname" class="form-input" placeholder="John" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="lname">Last Name</label>
+                        <input type="text" id="lname" class="form-input" placeholder="Doe" required>
+                    </div>
+                    <div class="form-group full-width">
+                        <label class="form-label" for="email">Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="john.doe@santra.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="password">Password</label>
+                        <input type="password" id="password" class="form-input" placeholder="••••••••" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" class="form-input" placeholder="••••••••" required>
+                    </div>
+                </div>
+
+                <div class="terms-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to Santra's Privacy Policy & Terms of Service</label>
+                </div>
+
+                <button type="submit" class="btn-luxury">Register Account</button>
+            </form>
+
+            <div class="auth-footer">
+                Already registered? <a href="login.html">Sign In Here</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p class="copyright">© 2026 Santra Fashion & Fine Books. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
