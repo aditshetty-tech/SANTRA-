@@ -74,3 +74,30 @@ body {
 /* FOOTER */
 .site-footer { background: #FFF; border-top: 1px solid rgba(0,0,0,0.06); padding: 35px; text-align: center; }
 .copyright { font-size: 10px; text-transform: uppercase; letter-spacing: 0.2em; color: #AAA; }
+/* BOOTSTRAP NAVBAR + SEARCH OVERRIDES */
+.navbar-toggler { border-color: rgba(18,18,18,0.15); padding: 6px 10px; }
+.navbar-toggler:focus { box-shadow: 0 0 0 2px rgba(194,110,75,0.25); }
+.navbar-toggler-icon { width: 1.1em; height: 1.1em; }
+.site-search { max-width: 200px; }
+.site-search .input-group-text {
+    background: #FAF8F5;
+    border: 1px solid #E2DDD5;
+    border-right: none;
+    color: #C26E4B;
+}
+.site-search .form-control {
+    border: 1px solid #E2DDD5;
+    border-left: none;
+    background: #FAF8F5;
+    font-size: 12px;
+}
+.site-search .form-control:focus {
+    box-shadow: none;
+    border-color: #E2DDD5;
+    background: #FFF;
+}
+@media (max-width: 991px) {
+    .navbar-collapse { margin-top: 20px; }
+    .nav-links { gap: 16px; margin-bottom: 16px; }
+    .site-search { max-width: 100%; }
+}
