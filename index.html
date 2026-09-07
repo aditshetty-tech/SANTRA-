@@ -4,22 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SANTRA | Haute Couture & Nature</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
     <header class="site-header">
-        <div class="brand-logo">
-            <span class="brand-title">Santra</span>
-            <span class="brand-subtitle">Nature Inspired Fashion</span>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="catalogue.html">Catalogue</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Register</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light p-0 w-100">
+            <div class="container-fluid px-0">
+                <div class="brand-logo">
+                    <span class="brand-title">Santra</span>
+                    <span class="brand-subtitle">Nature Inspired Fashion</span>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#santraNav" aria-controls="santraNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="santraNav">
+                    <ul class="nav-links navbar-nav mb-2 mb-lg-0 me-lg-4">
+                <li class="nav-item"><a href="index.html" class="active">Home</a></li>
+                <li class="nav-item"><a href="catalogue.html">Catalogue</a></li>
+                <li class="nav-item"><a href="login.html">Login</a></li>
+                <li class="nav-item"><a href="register.html">Register</a></li>
             </ul>
+                    <div class="input-group site-search">
+                        <span class="input-group-text"><i class="bi bi-search"></i></span>
+                        <input type="search" class="form-control" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -36,10 +49,10 @@
             </div>
         </section>
 
-        <section class="section-container">
+        <section class="section-container container">
             <h2 class="section-title">Featured Highlights</h2>
-            <div class="products-grid">
-                <div class="product-card">
+            <div class="row g-4 products-grid">
+                <div class="col-6 col-lg-3 product-card">
                     <div class="product-image-wrapper">
                         <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80" alt="Couture Coat">
                     </div>
@@ -49,7 +62,7 @@
                         <div class="product-rating">★★★★★</div>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="col-6 col-lg-3 product-card">
                     <div class="product-image-wrapper">
                         <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=600&q=80" alt="Silk Knit">
                     </div>
@@ -59,7 +72,7 @@
                         <div class="product-rating">★★★★★</div>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="col-6 col-lg-3 product-card">
                     <div class="product-image-wrapper">
                         <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80" alt="Tailored Trousers">
                     </div>
@@ -69,7 +82,7 @@
                         <div class="product-rating">★★★★★</div>
                     </div>
                 </div>
-                <div class="product-card">
+                <div class="col-6 col-lg-3 product-card">
                     <div class="product-image-wrapper">
                         <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=600&q=80" alt="Leather Boots">
                     </div>
@@ -77,6 +90,20 @@
                         <h3 class="product-title">Earthy Leather Boots</h3>
                         <div class="product-price">₹5,899</div>
                         <div class="product-rating">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="founder-section">
+            <div class="container">
+                <div class="row align-items-center justify-content-center g-4">
+                    <div class="col-auto text-center">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80" alt="Founder Portrait" class="rounded-circle founder-avatar">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="founder-quote">Every stitch at Santra draws inspiration from the quiet architecture of nature itself.</p>
+                        <span class="founder-name">— Julian Santra, Founder</span>
                     </div>
                 </div>
             </div>
@@ -93,5 +120,6 @@
         <p class="copyright">© 2026 Santra Fashion & Fine Books. All Rights Reserved.</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
